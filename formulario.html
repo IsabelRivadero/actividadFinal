@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta namme="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Informacion de contacto</h1>
+    </header>
+        <br><br>
+
+    <div>
+        <form>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="ingresa aqui tu nombre" required>
+                <br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="ingresa aqui tu apellido">
+                <br><br>
+            </fieldset>
+
+            <br><br>
+            <fieldset>
+                <!– datetime-local, moth, week -->
+                <label for="fecha">Fecha en la que deseas comenzar a prepararte</label><br>
+                <input type="date" name="fecha">
+                <br><br>
+                <label for="clasificacion">Clasificacion:</label><br>
+                <select name="sexos" class="sexos">
+                    <option value="Secundario">Secundario</option>
+                    <option value="Ingreso">Ingreso</option>
+                    <option value="Universitario" selected>Universitario</option>
+                </select>
+                <br><br>
+                <select name="select"> <!--Materias?-->
+                    <option value="AnalisisI">AnalisisI</option> 
+                    <option value="AnalisisII" selected>AnalisisII</option>
+                    <option value="AnalisisIII">AnalisisIII</option>
+                    <option value="AnalisisIV">AnalisisIV</option>
+                    <option value="AlgebraI/DiscretaI">AlgebraI/DiscretaI</option>
+                    <option value="AlgebraII">AlgebraII</option> 
+                    <option value="Mecanica">Mecanica</option>
+                    <option value="CuanticaI">CuanticaI</option>
+                </select>
+
+                <br><br>
+                <label for="Clases Individuales o Grupales">Clases Individuales o Grupales: </label>
+                <br>
+                <input type="checkbox" name="Individual" value="Individual">Individual<br>
+                <input type="checkbox" name="Grupo Reducido" value="Grupo Reducido">Grupo Reducido<br>
+                <br><br>
+        </fieldset>
+    
+        <fieldset>
+            <p>
+	            <label for="file">Carga el programa de tu materia:</label>
+	            <input type="file" id="file" capture="user" accept="file/pdf">
+	        </p>
+            <br>
+        </fieldset>
+    
+
+        <br>
+        <input type="submit" value="Enviar datos">   
+        <br><br>     
+    </form>
+    </div>
+
+</body>
+</html>
